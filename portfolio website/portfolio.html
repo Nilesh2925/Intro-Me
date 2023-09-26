@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(5, 5, 68);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* height: 80px; */
+            background-color: rgb(75, 75, 112);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 15px;
+        }
+
+        nav ul li a {
+            color: aliceblue;
+            text-decoration: none;
+
+        }
+
+        nav ul li a:hover {
+            color: red;
+            text-decoration: none;
+            font-size: 1.1rem;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .leftsection {
+            /* background-color: chartreuse; */
+            width: 30%;
+            font-size: 3rem;
+            margin-top: 50px;
+        }
+
+        .rightsection {
+            /* background-color: chartreuse; */
+            width: 30%;
+            /* margin-top: px; */
+
+        }
+
+        .rightsection img {
+            width: 70%;
+
+        }
+
+        .purple {
+            color: rgb(209, 53, 240);
+        }
+
+        #element {
+            color: rgb(209, 53, 240);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height:80vh;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(143, 60, 226);
+            height: 1.2px;
+            margin: 48px 84px;
+        }
+
+        .secondsection h1 {
+            font: 1.8rem;
+           
+        }
+        .texgrey{
+            color: grey;
+        }
+        
+        .box{
+           background: rgb(239, 233, 233);
+           /* background-color: rgb(135, 214, 31); */
+            width: 80vw;
+            height: 2px;
+            margin:56px 0;
+        }
+        .
+        
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Nilesh's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/nilesh-chavan-76a701233">Home</a></li>
+                    <li> <a href="#">about</a></li>
+                    <li><a href="#">Projects</a> </li>
+                    <li><a href="#">services</a> </li>
+                    <li><a href="#">Contact me </a> </li>
+
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My Name is <span class="purple">Nilesh </span>
+                <div> i am a passionate</div>
+                <!-- <div>web developer</div> -->
+                <span id="element"></span>
+
+            </div>
+
+            <div class="rightsection">
+                <img src="easy.png">
+
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="texgrey">What I done so far</span>
+            <h1>Work Experience</h1>
+            
+           <div class="box">
+               
+           </div>
+
+        </section>
+    </main>
+    <!-- type js  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'programmer', 'Teacher', 'Photographer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
